@@ -43,11 +43,11 @@ docker run -p 8080:8080 --name "payment-api" payment
 
 ### SEQUENCE DIAGRAM
 
-[그림1 : 시퀀스 다이어그램 - 구매정보]
-![SEQUENCE](./docs/images/sq-payment.png)
+[그림1 : 시퀀스 다이어그램 - API 흐름 : 주소]
+![flow-api](./docs/images/flow-api.png)
 
-[그림2 : 시퀀스 다이어그램 - 토큰발급]
-![SEQUENCE](./docs/images/sq-issue.png)
+[그림2 : 시퀀스 다이어그램 - API 흐름 : 설명]
+![flow-desc](./docs/images/flow-desc.png)
 
 ### ERD
 
