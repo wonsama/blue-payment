@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "api.issue.host",
+      "type": "java.lang.String",
+      "description": "A description for 'api.issue.host'"
+    },
+    {
+      "name": "api.issue.path.card",
+      "type": "java.lang.String",
+      "description": "A description for 'api.issue.path.card'"
+    },
+    {
+      "name": "api.issue.path.token",
+      "type": "java.lang.String",
+      "description": "A description for 'api.issue.path.token'"
+    },
+    {
+      "name": "api.auth.host",
+      "type": "java.lang.String",
+      "description": "A description for 'api.auth.host'"
+    },
+    {
+      "name": "api.auth.path.token.verify",
+      "type": "java.lang.String",
+      "description": "A description for 'api.auth.path.token.verify'"
+    }
+  ]
+}
