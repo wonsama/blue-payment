@@ -6,9 +6,9 @@
 
 > [APPLICATION 구성 확인 : created by eraser](https://app.eraser.io/workspace/0eZxiEwDAOIbPIWdFCMl?origin=share)
 
-1. PAYMENT - 구매 관련 API 서버 <<< 현재 프로젝트
-2. ISSUE - 토큰 발행 관련 API 서버
-3. AUTH - 승인 관련 API 서버
+1. [PAYMENT - 구매 관련 API 서버](https://github.com/wonsama/blue-payment) <<< 현재 프로젝트
+2. [ISSUE - 토큰 발행 관련 API 서버](https://github.com/wonsama/blue-issue)
+3. [AUTH - 승인 관련 API 서버](https://github.com/wonsama/blue-auth)
 
 ## 시스템 구성
 
