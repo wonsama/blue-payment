@@ -1,5 +1,6 @@
 package dev.wonsama.payment.controller;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,6 +32,8 @@ public class ShopController {
   @PostMapping
   @Operation(summary = "가맹점(Shop) 생성", description = "가맹점(Shop) 정보를 생성합니다.")
   public CreateShopResDto createShop(@Valid @RequestBody CreateShopReqDto dto, BindingResult bindingResult) {
+
+    log.info("1.3. /api/payment/shop : ", ToStringBuilder.reflectionToString(dto));
 
     if (bindingResult.hasErrors()) {
       bindingResult.getAllErrors().forEach(error -> {

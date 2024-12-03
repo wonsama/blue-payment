@@ -1,5 +1,6 @@
 package dev.wonsama.payment.controller;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -40,6 +41,8 @@ public class CardController {
   @PostMapping
   @Operation(summary = "Card 생성", description = "Card 정보를 생성합니다.")
   public CreateCardResDto createCard(@Valid @RequestBody CreateCardReqDto dto, BindingResult bindingResult) {
+
+    log.info("1.2. /api/payment/card : ", ToStringBuilder.reflectionToString(dto));
 
     if (bindingResult.hasErrors()) {
       bindingResult.getAllErrors().forEach(error -> {
