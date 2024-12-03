@@ -33,7 +33,7 @@ public class ShopController {
   @Operation(summary = "가맹점(Shop) 생성", description = "가맹점(Shop) 정보를 생성합니다.")
   public CreateShopResDto createShop(@Valid @RequestBody CreateShopReqDto dto, BindingResult bindingResult) {
 
-    log.info("1.3. /api/payment/shop : ", ToStringBuilder.reflectionToString(dto));
+    log.info("1.1. /api/payment/shop : ", ToStringBuilder.reflectionToString(dto));
 
     if (bindingResult.hasErrors()) {
       bindingResult.getAllErrors().forEach(error -> {
