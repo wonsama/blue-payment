@@ -42,7 +42,7 @@ public class CardController {
   @Operation(summary = "Card 생성", description = "Card 정보를 생성합니다.")
   public CreateCardResDto createCard(@Valid @RequestBody CreateCardReqDto dto, BindingResult bindingResult) {
 
-    log.info("1.2. /api/payment/card : ", ToStringBuilder.reflectionToString(dto));
+    log.info("🟢 1.2. /api/payment/card : ", ToStringBuilder.reflectionToString(dto));
 
     if (bindingResult.hasErrors()) {
       bindingResult.getAllErrors().forEach(error -> {

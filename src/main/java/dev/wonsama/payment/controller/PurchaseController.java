@@ -32,7 +32,7 @@ public class PurchaseController {
   public CreatePurchaseResDto createPurchase(@Valid @RequestBody CreatePurchaseReqDto dto,
       BindingResult bindingResult) {
 
-    log.info("1.3. /api/payment/purchase : ", ToStringBuilder.reflectionToString(dto));
+    log.info("🟢 1.3. /api/payment/purchase : ", ToStringBuilder.reflectionToString(dto));
 
     if (bindingResult.hasErrors()) {
       bindingResult.getAllErrors().forEach(error -> {
